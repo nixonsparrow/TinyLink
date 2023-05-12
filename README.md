@@ -58,4 +58,4 @@ To get redirection link use short attribute of created link:
 EXAMPLE GET ENDPOINT: /anowlx/
 ```
 And you will be redirected to the original link provided 
-for the object with exact short code (or 404 if not existing).
+for the object with that exact short code (or 404 if not existing).
