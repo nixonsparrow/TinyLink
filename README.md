@@ -19,13 +19,13 @@ $ python manage.py runserver
 
 Endpoints
 ```
-/links/           # GET, POST
-/links/<short>    # GET
+/           # GET, POST
+/<code>     # GET
 ```
 
 To create a shortened link just make POST request:
 ```
-POST ENDPOINT: /links/
+POST ENDPOINT: /
 CONTENT:
 {
     "original": "YOUR LINK TO SHORTEN"
@@ -34,7 +34,7 @@ CONTENT:
 
 To list all shortened links just make GET request:
 ```
-GET ENDPOINT: /links/
+GET ENDPOINT: /
 EXAMPLE CONTENT:
 [
     {
@@ -55,7 +55,7 @@ EXAMPLE CONTENT:
 To get redirection link use short attribute of created link:
 
 ```
-EXAMPLE GET ENDPOINT: /links/anowlx
+EXAMPLE GET ENDPOINT: /anowlx/
 ```
 And you will be redirected to the original link provided 
 for the object with exact short code (or 404 if not existing).
