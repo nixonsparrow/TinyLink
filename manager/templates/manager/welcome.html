@@ -1,0 +1,12 @@
+<form method="POST" action="/links/">
+    {% csrf_token %}
+    <fieldset class="border-bottom mb-2">
+    <legend class="border-bottom mb-2">Link form</legend>
+        {{ form }}
+    </fieldset>
+    <div class="d-flex">
+        <button class="form-button submit-button" type="submit" id="submit_button">
+            Add
+        </button>
+    </div>
+</form>
